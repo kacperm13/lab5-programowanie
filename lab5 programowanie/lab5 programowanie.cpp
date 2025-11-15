@@ -63,6 +63,89 @@ int main()
 	cout << "Najmniejsza liczba jest rowna " << najm << "\n";
 
 	*/
+	/*										//zad 4 nieskonczone
+	int rzad;
+	cout << "Podaj ilosc wierszow\n";
+	cin >> rzad;
+	int kol;
+	cout << "Podaj ilosc kolumn\n";
+	cin >> kol;
 
-
+	cin >> kol;
+	int** tab = new int* [rzad];
+	for (int i = 0; i < rzad; i++) {
+			
+		}
+	}
+	*/
+	/*
+	const int rozmiar = 10;										//zad 5
+	int tab[rozmiar];
+	int n;
+	cout << "Podaj ilosc elementow ktore chcesz wpisac (0-10):" << endl;
+	cin >> n;
+	while (n < 0 || n>10) {
+		cout << "Bledna wartosc. Podaj ponownie." << endl;
+		cin >> n;
+	}
+	for (int i = 0; i < n; i++) {
+		cin >> tab[i];
+	}
+	for (int i = n; i < rozmiar; i++) {
+		tab[i] = 0;
+	}
+	float avg=0;
+	for (int i = 0; i < rozmiar; i++) {
+		avg += tab[i];
+	}
+	cout << "Srednia wartosci w tablicy = " << avg / rozmiar << endl;
+	int min = tab[0];
+	int max = tab[0];
+	for (int i = 0; i < rozmiar; i++) {
+		if (min > tab[i]) {
+			min = tab[i];
+		}
+		if (max < tab[i]) {
+			max = tab[i];
+		}
+	}
+	cout << "Maksymalna wartosc = " << max << endl;
+	cout << "Minimalna wartosc = " << min << endl;
+	*/
+/*
+	const int n = 10;				//zad 6
+	int tab[n];
+	int seed = time(NULL);
+	srand(seed);
+	int lucky = rand() % 11;
+	cout << "Szczesliwa liczba = " << lucky << endl;
+	int count=0;
+	for (int i = 0; i < n; i++) {
+		tab[i] = rand() % 11;
+		cout << i+1 << " element tablicy = " << tab[i] << endl;
+		if (lucky == tab[i]) {
+			count++; 
+		}
+	}
+	cout << "Szczesliwa liczba zostala wylosowana " << count << " raz(y)." << endl;
+	*/
+	//zad 7,8,9 - brak umiejetnosci zrobienia macierzy z wartosciaim wpisanymi przez uzytkownika
+/*
+	const int n = 10;					//zad10
+	int tab[n];
+	cout << "podaj wartosci tabeli: \n";
+	for (int i = 0; i < n; i++) {
+		cin >> tab[i];
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = i+1; j < n; j++) {
+			if (tab[i] > tab[j]) {
+				swap(tab[i],tab[j]);
+			}
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		cout << tab[i] << " ";
+	}
+	*/
 }
